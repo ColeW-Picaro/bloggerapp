@@ -6,12 +6,12 @@ var morgan = require('morgan');
 var debug = require('debug')('app');
 require('./app_server/models/db');
 
-const router = require('./routes/index');
+const router = require('./app_server/routes/index');
 
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'app_server/views'));
 app.set('view engine', 'ejs');
 
 app.use(morgan('tiny'));

@@ -586,3 +586,30 @@ GET /css/bootstrap.min.css 304 - - 1.041 ms
 GET /css/fontawesome-all.css 304 - - 1.819 ms
 GET /js/bootstrap.min.js 304 - - 1.609 ms
 GET /js/jquery.min.js 304 - - 0.671 ms
+GET /favicon.ico - - - - ms
+GET / 304 - - 2.674 ms
+GET /stylesheets/style.css 304 - - 3.754 ms
+GET /css/bootstrap.min.css 304 - - 0.455 ms
+GET /js/jquery.min.js 304 - - 0.529 ms
+GET /js/bootstrap.min.js 304 - - 0.418 ms
+GET /bloglist 304 - - 1.315 ms
+GET /stylesheets/style.css 304 - - 0.399 ms
+GET /css/bootstrap.min.css 304 - - 0.997 ms
+GET /css/fontawesome-all.css 304 - - 1.190 ms
+GET /js/jquery.min.js 304 - - 0.529 ms
+GET /js/bootstrap.min.js 304 - - 0.540 ms
+GET /webfonts/fa-solid-900.woff2 304 - - 0.475 ms
+GET / 304 - - 1.459 ms
+GET /stylesheets/style.css 304 - - 0.361 ms
+GET /js/jquery.min.js 304 - - 2.050 ms
+GET /css/bootstrap.min.css 304 - - 0.883 ms
+GET /js/bootstrap.min.js 304 - - 0.479 ms
+GET /favicon.ico - - - - ms
+GET /boaform/admin/formLogin?username=adminisp&psd=adminisp 404 1030 - 1.574 ms
+GET / 304 - - 0.957 ms
+GET /stylesheets/style.css 304 - - 0.332 ms
+GET /css/bootstrap.min.css 304 - - 0.488 ms
+GET /js/jquery.min.js 304 - - 0.567 ms
+GET /js/bootstrap.min.js 304 - - 1.373 ms
+Mongoose disconnected
+Mongoose disconnected through Heroku app shutdown
