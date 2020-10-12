@@ -4,9 +4,10 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var morgan = require('morgan');
 var debug = require('debug')('app');
-require('./app_server/models/db');
+require('./app_api/models/db');
 
 const router = require('./app_server/routes/index');
+const routesApi = require('./app_api/routes/index');
 
 var app = express();
 
@@ -27,11 +28,8 @@ app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 app.use('/css', express.static(__dirname + '/public/stylesheets'));
 app.use('/webfonts', express.static(__dirname + '/public/fonts/webfonts/')); 
 
-app.get('/', router);
-app.get('/bloglist', router);
-app.get('/blogadd', router);
-app.get('/blogedit', router);
-app.get('/blogdelete', router);
+app.use('/', router);
+app.use('/api', routesApi)
 
 // catch favicon requests and respond
 app.use('/favicon.ico', (req, res) => res.status(204));

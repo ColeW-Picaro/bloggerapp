@@ -613,3 +613,338 @@ GET /js/jquery.min.js 304 - - 0.567 ms
 GET /js/bootstrap.min.js 304 - - 1.373 ms
 Mongoose disconnected
 Mongoose disconnected through Heroku app shutdown
+(node:26940) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:26940) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Mongoose connected to mongodb://localhost/blogger
+GET / 304 - - 10.366 ms
+GET /stylesheets/style.css 304 - - 1.245 ms
+GET /css/bootstrap.min.css 304 - - 2.229 ms
+GET /js/bootstrap.min.js 304 - - 0.773 ms
+GET /js/jquery.min.js 304 - - 1.687 ms
+GET /bloglist 304 - - 2.426 ms
+GET /favicon.ico - - - - ms
+GET /stylesheets/style.css 304 - - 0.447 ms
+GET /css/bootstrap.min.css 304 - - 0.500 ms
+GET /css/fontawesome-all.css 304 - - 0.610 ms
+GET /js/jquery.min.js 304 - - 0.627 ms
+GET /js/bootstrap.min.js 304 - - 0.458 ms
+GET /webfonts/fa-solid-900.woff2 304 - - 0.560 ms
+GET /blogadd 304 - - 1.404 ms
+GET /favicon.ico - - - - ms
+GET /stylesheets/style.css 304 - - 0.533 ms
+GET /css/bootstrap.min.css 304 - - 1.388 ms
+GET /js/bootstrap.min.js 304 - - 0.653 ms
+GET /js/jquery.min.js 304 - - 1.417 ms
+GET /bloglist 304 - - 2.607 ms
+GET /favicon.ico - - - - ms
+GET /stylesheets/style.css 304 - - 0.377 ms
+GET /css/bootstrap.min.css 304 - - 1.076 ms
+GET /css/fontawesome-all.css 304 - - 1.191 ms
+GET /js/jquery.min.js 304 - - 0.552 ms
+GET /js/bootstrap.min.js 304 - - 0.447 ms
+GET /blogedit/ 304 - - 1.489 ms
+GET /favicon.ico - - - - ms
+GET /stylesheets/style.css 304 - - 0.530 ms
+GET /css/bootstrap.min.css 304 - - 1.369 ms
+GET /js/bootstrap.min.js 304 - - 0.612 ms
+GET /js/jquery.min.js 304 - - 1.390 ms
+GET / 304 - - 1.459 ms
+GET /favicon.ico - - - - ms
+GET /stylesheets/style.css 304 - - 0.711 ms
+GET /css/bootstrap.min.css 304 - - 0.824 ms
+GET /js/jquery.min.js 304 - - 0.574 ms
+GET /js/bootstrap.min.js 304 - - 0.400 ms
+GET / 304 - - 1.078 ms
+GET /stylesheets/style.css 304 - - 0.344 ms
+GET /css/bootstrap.min.css 304 - - 0.534 ms
+GET /js/jquery.min.js 304 - - 0.546 ms
+GET /js/bootstrap.min.js 304 - - 0.408 ms
+GET /bloglist 304 - - 1.387 ms
+GET /stylesheets/style.css 304 - - 1.033 ms
+GET /css/bootstrap.min.css 304 - - 1.268 ms
+GET /css/fontawesome-all.css 304 - - 1.398 ms
+GET /js/jquery.min.js 304 - - 0.585 ms
+GET /js/bootstrap.min.js 304 - - 0.441 ms
+GET /webfonts/fa-solid-900.woff2 304 - - 0.514 ms
+GET /blogadd 304 - - 1.291 ms
+GET /stylesheets/style.css 304 - - 1.074 ms
+GET /css/bootstrap.min.css 304 - - 2.017 ms
+GET /js/bootstrap.min.js 304 - - 1.483 ms
+GET /js/jquery.min.js 304 - - 2.163 ms
+GET /favicon.ico - - - - ms
+GET /.env 404 1371 - 1.673 ms
+GET /admin/.env 404 1371 - 1.111 ms
+GET /laravel/.env 404 1371 - 0.955 ms
+GET /public/.env 404 1371 - 0.940 ms
+GET /v1/.env 404 1371 - 1.572 ms
+GET /app/.env 404 1371 - 0.935 ms
+GET /config/.env 404 1371 - 0.924 ms
+GET /core/.env 404 1371 - 0.873 ms
+GET /apps/.env 404 1371 - 0.840 ms
+GET /lib/.env 404 1371 - 0.916 ms
+GET /cron/.env 404 1371 - 0.841 ms
+GET /database/.env 404 1371 - 0.872 ms
+GET /uploads/.env 404 1371 - 0.940 ms
+GET /site/.env 404 1371 - 0.905 ms
+GET /web/.env 404 1371 - 1.623 ms
+GET /administrator/.env 404 1371 - 0.909 ms
+POST /HNAP1/ 404 1453 - 1.984 ms
+GET / 200 826 - 1.707 ms
+GET / 200 826 - 0.975 ms
+GET / 200 826 - 0.955 ms
+GET /solr/admin/info/system?wt=json 404 1030 - 1.137 ms
+GET /?XDEBUG_SESSION_START=phpstorm 200 826 - 0.852 ms
+GET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> 200 826 - 0.937 ms
+GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP 404 963 - 1.711 ms
+POST /api/jsonws/invoke 404 1452 - 10.054 ms
+GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php 404 963 - 0.977 ms
+POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php 404 1452 - 49.784 ms
+GET / 200 826 - 1.726 ms
+GET / 200 826 - 0.941 ms
+GET /config/getuser?index=0 404 1030 - 2.874 ms
+POST /GponForm/diag_Form?images/ 404 1453 - 0.751 ms
+GET / 200 826 - 1.033 ms
+GET / 200 826 - 0.931 ms
+GET / 200 826 - 0.919 ms
+GET / 200 826 - 0.938 ms
+GET / 200 826 - 0.993 ms
+GET /.git/config 404 1030 - 0.882 ms
+GET /v2/_catalog 404 1030 - 0.716 ms
+GET /.env 404 1371 - 0.620 ms
+GET / 200 826 - 0.967 ms
+GET / 200 826 - 1.356 ms
+GET / 200 826 - 0.983 ms
+GET / 200 826 - 0.729 ms
+GET / 200 826 - 1.023 ms
+GET / 200 826 - 0.948 ms
+GET / 200 826 - 0.982 ms
+POST /HNAP1/ 404 1453 - 0.891 ms
+GET / 200 826 - 0.911 ms
+GET / 200 826 - 0.999 ms
+GET / 200 826 - 0.902 ms
+POST /boaform/admin/formLogin 404 1452 - 1.015 ms
+GET / 200 826 - 0.980 ms
+GET / 200 826 - 0.992 ms
+GET / 200 826 - 0.966 ms
+GET /.env 404 1371 - 1.006 ms
+POST / 404 1452 - 2.226 ms
+GET / 304 - - 0.945 ms
+GET /stylesheets/style.css 200 89 - 10.101 ms
+GET /js/bootstrap.min.js 200 60044 - 1.224 ms
+GET /css/bootstrap.min.css 200 160302 - 6.203 ms
+GET /js/jquery.min.js 200 89476 - 3.033 ms
+GET /blogadd 200 815 - 1.531 ms
+GET /favicon.ico - - - - ms
+GET /stylesheets/style.css 304 - - 0.330 ms
+GET /css/bootstrap.min.css 304 - - 0.406 ms
+GET /js/jquery.min.js 304 - - 0.479 ms
+GET /js/bootstrap.min.js 304 - - 0.444 ms
+GET /bloglist 200 2900 - 4.452 ms
+GET /favicon.ico - - - - ms
+GET /stylesheets/style.css 304 - - 0.360 ms
+GET /css/bootstrap.min.css 304 - - 0.644 ms
+GET /css/fontawesome-all.css 200 51609 - 2.181 ms
+GET /js/jquery.min.js 304 - - 0.522 ms
+GET /js/bootstrap.min.js 304 - - 0.374 ms
+GET /webfonts/fa-solid-900.woff2 200 50372 - 2.355 ms
+GET /blogadd 304 - - 1.000 ms
+GET /favicon.ico - - - - ms
+GET /stylesheets/style.css 304 - - 1.331 ms
+GET /css/bootstrap.min.css 304 - - 1.379 ms
+GET /js/bootstrap.min.js 304 - - 1.335 ms
+GET /js/jquery.min.js 304 - - 2.286 ms
+GET /favicon.ico - - - - ms
+GET /hudson 404 1030 - 1.583 ms
+GET /boaform/admin/formLogin?username=ec8&psd=ec8 404 1030 - 1.016 ms
+GET /solr/admin/info/system?wt=json 404 1030 - 0.936 ms
+GET /?XDEBUG_SESSION_START=phpstorm 200 826 - 1.052 ms
+GET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> 200 826 - 0.939 ms
+GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP 404 963 - 0.924 ms
+GET /.env 404 1371 - 0.886 ms
+POST / 404 1452 - 1.052 ms
+GET /.env 404 1371 - 0.856 ms
+POST / 404 1452 - 0.954 ms
+GET / 200 826 - 0.987 ms
+GET / 200 826 - 0.995 ms
+GET /.env 404 1371 - 0.999 ms
+POST / 404 1452 - 0.980 ms
+POST /api/jsonws/invoke 404 1452 - 0.964 ms
+GET / 200 826 - 0.888 ms
+GET / 200 826 - 0.937 ms
+GET / 200 826 - 1.065 ms
+GET / 200 826 - 0.972 ms
+GET / 200 826 - 0.946 ms
+GET / 200 826 - 0.928 ms
+GET / 200 826 - 0.929 ms
+GET /muieblackcat 404 1030 - 1.600 ms
+GET //phpMyAdmin/scripts/setup.php 404 963 - 0.794 ms
+GET //phpmyadmin/scripts/setup.php 404 963 - 0.763 ms
+GET //PMA/scripts/setup.php 404 963 - 0.881 ms
+GET //admin/scripts/setup.php 404 963 - 0.737 ms
+GET //dbadmin/scripts/setup.php 404 963 - 0.824 ms
+GET //mysql/scripts/setup.php 404 963 - 0.911 ms
+GET //webdav/wickd.php 404 963 - 0.901 ms
+GET / 200 826 - 1.012 ms
+GET /config/getuser?index=0 404 1030 - 0.926 ms
+GET /boaform/admin/formLogin?username=admin&psd=admin 404 1030 - 1.004 ms
+GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php 404 963 - 0.990 ms
+POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php 404 1452 - 1.000 ms
+GET / 200 826 - 0.884 ms
+GET / 200 826 - 0.985 ms
+GET /boaform/admin/formLogin?username=adminisp&psd=adminisp 404 1030 - 1.101 ms
+GET / 200 826 - 1.005 ms
+GET / 200 826 - 0.919 ms
+GET / 200 826 - 0.955 ms
+GET / 200 826 - 0.989 ms
+(node:11534) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:11534) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Mongoose connected to mongodb://blogs:blogs@localhost/blogger
+Getting blog list
+[
+  {
+    _id: 5f7cf112fcfc283ef84dfe8b,
+    blogTitle: 'Blog #1',
+    blogText: 'I wrote this',
+    createdOn: 2020-10-06T22:34:58.810Z,
+    __v: 0
+  },
+  {
+    _id: 5f7cf11cfcfc283ef84dfe8c,
+    blogTitle: 'Another blog',
+    blogText: 'Back at it again!',
+    createdOn: 2020-10-06T22:35:08.662Z,
+    __v: 0
+  },
+  {
+    _id: 5f7cf12efcfc283ef84dfe8d,
+    blogTitle: 'Yet another blog',
+    blogText: 'Go ahead, edit! See what happens...\r\n\r\nI edited.',
+    createdOn: 2020-10-06T22:35:26.123Z,
+    __v: 0
+  }
+]
+GET /api/blogs 200 309 - 36.648 ms
+GET /bloglist 304 - - 59.288 ms
+GET /stylesheets/style.css 304 - - 1.023 ms
+GET /css/bootstrap.min.css 304 - - 0.523 ms
+GET /css/fontawesome-all.css 304 - - 0.610 ms
+GET /js/jquery.min.js 304 - - 0.554 ms
+GET /js/bootstrap.min.js 304 - - 0.481 ms
+GET /webfonts/fa-solid-900.woff2 304 - - 0.504 ms
+Getting blog list
+[
+  {
+    _id: 5f7cf112fcfc283ef84dfe8b,
+    blogTitle: 'Blog #1',
+    blogText: 'I wrote this',
+    createdOn: 2020-10-06T22:34:58.810Z,
+    __v: 0
+  },
+  {
+    _id: 5f7cf11cfcfc283ef84dfe8c,
+    blogTitle: 'Another blog',
+    blogText: 'Back at it again!',
+    createdOn: 2020-10-06T22:35:08.662Z,
+    __v: 0
+  },
+  {
+    _id: 5f7cf12efcfc283ef84dfe8d,
+    blogTitle: 'Yet another blog',
+    blogText: 'Go ahead, edit! See what happens...\r\n\r\nI edited.',
+    createdOn: 2020-10-06T22:35:26.123Z,
+    __v: 0
+  }
+]
+GET /api/blogs 200 309 - 3.566 ms
+GET /bloglist 304 - - 8.994 ms
+GET /favicon.ico - - - - ms
+GET /stylesheets/style.css 304 - - 0.895 ms
+GET /css/bootstrap.min.css 304 - - 1.187 ms
+GET /css/fontawesome-all.css 304 - - 2.417 ms
+GET /js/jquery.min.js 304 - - 0.569 ms
+GET /js/bootstrap.min.js 304 - - 0.465 ms
+GET /blogadd 200 1403 - 1.825 ms
+GET /favicon.ico - - - - ms
+GET /stylesheets/style.css 304 - - 0.423 ms
+GET /css/bootstrap.min.css 304 - - 0.894 ms
+GET /js/jquery.min.js 304 - - 1.079 ms
+GET /js/bootstrap.min.js 304 - - 0.459 ms
+GET /favicon.ico - - - - ms
+Getting blog list
+[
+  {
+    _id: 5f7cf112fcfc283ef84dfe8b,
+    blogTitle: 'Blog #1',
+    blogText: 'I wrote this',
+    createdOn: 2020-10-06T22:34:58.810Z,
+    __v: 0
+  },
+  {
+    _id: 5f7cf11cfcfc283ef84dfe8c,
+    blogTitle: 'Another blog',
+    blogText: 'Back at it again!',
+    createdOn: 2020-10-06T22:35:08.662Z,
+    __v: 0
+  },
+  {
+    _id: 5f7cf12efcfc283ef84dfe8d,
+    blogTitle: 'Yet another blog',
+    blogText: 'Go ahead, edit! See what happens...\r\n\r\nI edited.',
+    createdOn: 2020-10-06T22:35:26.123Z,
+    __v: 0
+  }
+]
+GET /api/blogs 200 309 - 4.531 ms
+GET /bloglist 304 - - 9.696 ms
+GET /favicon.ico - - - - ms
+GET /stylesheets/style.css 304 - - 0.427 ms
+GET /css/fontawesome-all.css 304 - - 0.612 ms
+GET /css/bootstrap.min.css 304 - - 0.483 ms
+GET /js/jquery.min.js 304 - - 0.744 ms
+GET /js/bootstrap.min.js 304 - - 0.469 ms
+{
+  _id: 5f7cf112fcfc283ef84dfe8b,
+  blogTitle: 'Blog #1',
+  blogText: 'I wrote this',
+  createdOn: 2020-10-06T22:34:58.810Z,
+  __v: 0
+}
+GET /api/blogs/5f7cf112fcfc283ef84dfe8b 200 129 - 5.185 ms
+GET /blogedit/5f7cf112fcfc283ef84dfe8b 200 1449 - 10.457 ms
+GET /favicon.ico - - - - ms
+GET /stylesheets/style.css 304 - - 0.368 ms
+GET /css/bootstrap.min.css 304 - - 0.919 ms
+GET /js/jquery.min.js 304 - - 1.093 ms
+GET /js/bootstrap.min.js 304 - - 0.454 ms
+Getting blog list
+[
+  {
+    _id: 5f7cf112fcfc283ef84dfe8b,
+    blogTitle: 'Blog #1',
+    blogText: 'I wrote this',
+    createdOn: 2020-10-06T22:34:58.810Z,
+    __v: 0
+  },
+  {
+    _id: 5f7cf11cfcfc283ef84dfe8c,
+    blogTitle: 'Another blog',
+    blogText: 'Back at it again!',
+    createdOn: 2020-10-06T22:35:08.662Z,
+    __v: 0
+  },
+  {
+    _id: 5f7cf12efcfc283ef84dfe8d,
+    blogTitle: 'Yet another blog',
+    blogText: 'Go ahead, edit! See what happens...\r\n\r\nI edited.',
+    createdOn: 2020-10-06T22:35:26.123Z,
+    __v: 0
+  }
+]
+GET /api/blogs 200 309 - 4.756 ms
+GET /bloglist 304 - - 8.291 ms
+GET /favicon.ico - - - - ms
+GET /stylesheets/style.css 304 - - 0.340 ms
+GET /css/bootstrap.min.css 304 - - 0.457 ms
+GET /css/fontawesome-all.css 304 - - 0.542 ms
+GET /js/jquery.min.js 304 - - 0.507 ms
+GET /js/bootstrap.min.js 304 - - 0.481 ms

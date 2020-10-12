@@ -8,7 +8,18 @@
     <div class="container">
         <% include ./partials/nav %>
 	      <H1><%= title %></H1>
-	      <p>Feature is under construction</p>
+        <div class="card" style="width: 50%">
+          <form method="post" action="/blogedit/<%=blog._id%>" style="padding: 20px">
+            <div class="form-group">
+              <label for="blogTitle" class="text-primary">Blog Title</label>
+              <input class="form-control" id="blogTitle" name="blogTitle" value="<%=blog.blogTitle%>"></input>
+
+              <label for="blogText" class="text-primary">Blog Text</label>
+              <textarea class="form-control" id="blogText" rows="5" name="blogText"><%=blog.blogText%></textarea>
+            </div>
+          <input type="submit" class="btn btn-primary" value="Edit Blog">
+        </form>
+        </div>
     </div> <!-- container -->
   </body>
   <script src="/js/jquery.min.js"></script>
