@@ -13,6 +13,7 @@ var buildBlogList = function(req, res, results) {
     blogs.push({
         blogTitle: obj.blogTitle,
         blogText: obj.blogText,
+        createdOn: obj.createdOn,
         _id: obj._id,
     });
   });
