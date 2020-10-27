@@ -43,7 +43,7 @@ app.config(function($stateProvider) {
 });
 
 
-//*** REST API functions ***
+// REST API functions
 function getAllBlogs($http) {
     return $http.get('/api/blogs');
 };
