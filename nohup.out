@@ -2638,3 +2638,80 @@ GET / 200 5646 - 0.638 ms
 GET / 200 5646 - 0.694 ms
 GET /.env 200 5646 - 0.671 ms
 POST / 200 5646 - 0.780 ms
+(node:2722) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:2722) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Mongoose connected to mongodb://blogs:blogs@localhost/blogger
+GET / 304 - - 5.251 ms
+GET /js/angular.min.js 304 - - 1.044 ms
+GET /css/bootstrap.min.css 304 - - 0.975 ms
+GET /stylesheets/style.css 304 - - 0.353 ms
+GET /css/fontawesome-all.css 304 - - 0.618 ms
+GET /js/angular-route.min.js 304 - - 0.597 ms
+GET /js/angular-ui-router.min.js 304 - - 0.597 ms
+GET /js/bloggerApp.js 304 - - 1.009 ms
+GET /js/auth/authentication.js 304 - - 1.336 ms
+GET /js/nav/navigation.js 304 - - 0.706 ms
+GET /js/angular.min.js.map 304 - - 1.078 ms
+GET /js/angular-route.min.js.map 304 - - 0.999 ms
+GET /js/angular-ui-router.min.js.map 304 - - 0.997 ms
+GET /css/bootstrap.min.css.map 304 - - 0.480 ms
+GET /js/nav/navigation.html 304 - - 0.679 ms
+Getting blog list
+[
+  {
+    _id: 5f920ae79feec0351d4d980e,
+    blogTitle: 'This is a blog',
+    blogText: 'cool! I edited.',
+    createdOn: 2020-10-22T22:42:47.304Z,
+    __v: 0
+  },
+  {
+    _id: 5f9b084d9477e92caa648117,
+    blogTitle: "I'm logged in now!",
+    blogText: '',
+    createdOn: 2020-10-29T18:22:05.092Z,
+    __v: 0
+  }
+]
+GET /api/blogs 304 - - 20.982 ms
+GET /pages/blog-list.html 304 - - 14.195 ms
+GET /favicon.ico 200 5396 - 2.528 ms
+GET /js/auth/login.html 304 - - 0.823 ms
+GET /favicon.ico 304 - - 0.508 ms
+POST /api/login 200 241 - 26.571 ms
+GET /favicon.ico 304 - - 0.833 ms
+Getting blog list
+[
+  {
+    _id: 5f920ae79feec0351d4d980e,
+    blogTitle: 'This is a blog',
+    blogText: 'cool! I edited.',
+    createdOn: 2020-10-22T22:42:47.304Z,
+    __v: 0
+  },
+  {
+    _id: 5f9b084d9477e92caa648117,
+    blogTitle: "I'm logged in now!",
+    blogText: '',
+    createdOn: 2020-10-29T18:22:05.092Z,
+    __v: 0
+  }
+]
+GET /api/blogs 304 - - 4.519 ms
+GET /favicon.ico 304 - - 0.685 ms
+GET / 304 - - 0.677 ms
+GET /js/angular.min.js 304 - - 0.778 ms
+GET /stylesheets/style.css 304 - - 0.454 ms
+GET /css/bootstrap.min.css 304 - - 0.483 ms
+GET /css/fontawesome-all.css 304 - - 0.595 ms
+GET /js/angular-route.min.js 304 - - 0.867 ms
+GET /js/auth/authentication.js 304 - - 1.691 ms
+GET /js/angular-ui-router.min.js 304 - - 0.597 ms
+GET /js/bloggerApp.js 304 - - 0.515 ms
+GET /js/nav/navigation.js 304 - - 0.661 ms
+GET /js/angular.min.js.map 304 - - 0.929 ms
+GET /js/angular-route.min.js.map 304 - - 0.956 ms
+GET /js/angular-ui-router.min.js.map 304 - - 1.005 ms
+GET /css/bootstrap.min.css.map 304 - - 0.537 ms
+GET /js/nav/navigation.html 304 - - 0.852 ms
+GET /favicon.ico 304 - - 0.629 ms
