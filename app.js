@@ -1,18 +1,19 @@
+require('dotenv').config();
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 var morgan = require('morgan');
 var debug = require('debug')('app');
+var passport = require('passport');
 require('./app_api/models/db');
+require('./app_api/config/passport');
 
 const routesApi = require('./app_api/routes/index');
 
 var app = express();
 
 // view engine setup
-//app.set('views', path.join(__dirname, 'app_server/views'));
-//app.set('view engine', 'ejs');
 
 app.use(morgan('tiny'));
 app.use(express.json());
@@ -21,8 +22,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(passport.initialize());
 app.use('/js', express.static(path.join(__dirname, 'app_client')));
 app.use('/js', express.static(path.join(__dirname, 'app_client/lib')));
+app.use('/js', express.static(path.join(__dirname, 'app_client/common')));
 app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js')); // redirect bootstrap JS
 app.use('/js', express.static(__dirname + '/node_modules/jquery/dist')); // redirect JS jQuery
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css')); // redirect CSS bootstrap
@@ -50,7 +53,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render('error', {error: err});
 });
 
 app.listen(80)

@@ -10,16 +10,8 @@
     </head>
     <body>
         <!-- Navigation -->
-        <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-primary">
-            <a class="navbar-brand" href="/#!">My Blog</a>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="/#!/blog-list">List Blogs</a>
-                    <a class="nav-item nav-link active" href="/#!/blog-add">Add Blog</a>
-                </div>
-            </div>
-        </nav>
-
+        <navigation ng-controller="NavigationController"></navigation>
+        <p>{{ vm.formError }}</p>
         <!-- Angular Templates -->
         <!-- Home Template -->
         <script type="text/ng-template" id="pages/home.html">
@@ -41,7 +33,7 @@
                     </div>
                     <div class="card-footer">
                         <div class = "col-sm">
-                            <ul class="nav justify-content-end nav-pills card-header-pills">
+                            <ul ng-show="vm.isLoggedIn()" class="nav justify-content-end nav-pills card-header-pills">
                                 <li class="nav-item">
                                     <a class="nav-link" href="/#!/blog-edit/{{blog._id}}"> <i class="fas fa-edit"></i></a>
                                 </li>
@@ -107,6 +99,7 @@
 
         <div ng-view></div>
         <script src="/js/bloggerApp.js"></script>
-
+        <script src="/js/auth/authentication.js"></script>
+        <script src="/js/nav/navigation.js"></script>
     </body>
 </html>
