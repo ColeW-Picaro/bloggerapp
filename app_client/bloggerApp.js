@@ -71,7 +71,8 @@ function addBlog($http, data, auth) {
 }
 
 function deleteBlog($http, id, auth) {
-    return $http.delete('/api/blogs/' + id, { headers: { Authorization: 'Bearer '+ auth.getToken() }});
+    return $http.delete('/api/blogs/' + id, { headers: { Authorization: 'Bearer '+ auth.getToken() },
+                                              });
 }
 
 app.controller('HomeController', function HomeController() {
@@ -101,6 +102,10 @@ app.controller('ListController', function ListController($http, authentication) 
     vm.isLoggedIn = function() {
         return authentication.isLoggedIn();
     }
+    vm.isCreatedBy = function(email) {
+        console.log(email);
+        return authentication.currentUser().email == email;
+    }
 });
 
 app.controller('AddController', function AddController($http, $routeParams, $state, authentication) {
@@ -114,7 +119,8 @@ app.controller('AddController', function AddController($http, $routeParams, $sta
         var data = vm.blog;
         data.blogTitle = userForm.blogTitle.value;
         data.blogText =  userForm.blogText.value;
-
+        data.authorEmail = authentication.currentUser().email;
+        data.authorName = authentication.currentUser().name;
         addBlog($http, data, authentication)
             .then(
                 function(data) {

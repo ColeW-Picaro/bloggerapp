@@ -4613,3 +4613,250 @@ GET / 200 5396 - 0.651 ms
 GET /config/getuser?index=0 200 5396 - 0.668 ms
 GET / 200 5396 - 0.642 ms
 GET / 200 5396 - 0.696 ms
+(node:8348) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:8348) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Mongoose connected to mongodb://blogs:blogs@localhost/blogger
+Getting blog list
+[
+  {
+    _id: 5fa95ac700de211a231aa815,
+    blogTitle: 'Attach my email',
+    blogText: 'it works!',
+    authorEmail: 'colevohs@gmail.com',
+    authorName: 'Cole',
+    createdOn: 2020-11-09T15:05:43.444Z,
+    __v: 0
+  },
+  {
+    _id: 5fa95dd86bf60b1d9ff70999,
+    blogTitle: 'logged in with a different account',
+    blogText: 'it shows my name!',
+    authorEmail: 'colevohs@googlemail.com',
+    authorName: 'Cole',
+    createdOn: 2020-11-09T15:18:48.249Z,
+    __v: 0
+  },
+  {
+    _id: 5fa95e7a6bf60b1d9ff7099b,
+    blogTitle: 'This is a blog',
+    blogText: 'Now you can only edit your own!',
+    authorEmail: 'colevohs@protonmail.com',
+    authorName: 'Cole Vohs',
+    createdOn: 2020-11-09T15:21:30.219Z,
+    __v: 0
+  }
+]
+GET /api/blogs 304 - - 23.476 ms
+GET /favicon.ico 304 - - 16.107 ms
+GET /favicon.ico 304 - - 0.693 ms
+Getting blog list
+[
+  {
+    _id: 5fa95ac700de211a231aa815,
+    blogTitle: 'Attach my email',
+    blogText: 'it works!',
+    authorEmail: 'colevohs@gmail.com',
+    authorName: 'Cole',
+    createdOn: 2020-11-09T15:05:43.444Z,
+    __v: 0
+  },
+  {
+    _id: 5fa95dd86bf60b1d9ff70999,
+    blogTitle: 'logged in with a different account',
+    blogText: 'it shows my name!',
+    authorEmail: 'colevohs@googlemail.com',
+    authorName: 'Cole',
+    createdOn: 2020-11-09T15:18:48.249Z,
+    __v: 0
+  },
+  {
+    _id: 5fa95e7a6bf60b1d9ff7099b,
+    blogTitle: 'This is a blog',
+    blogText: 'Now you can only edit your own!',
+    authorEmail: 'colevohs@protonmail.com',
+    authorName: 'Cole Vohs',
+    createdOn: 2020-11-09T15:21:30.219Z,
+    __v: 0
+  }
+]
+GET /api/blogs 304 - - 5.225 ms
+GET /favicon.ico 304 - - 0.495 ms
+GET /favicon.ico 304 - - 0.651 ms
+Getting blog list
+[
+  {
+    _id: 5fa95ac700de211a231aa815,
+    blogTitle: 'Attach my email',
+    blogText: 'it works!',
+    authorEmail: 'colevohs@gmail.com',
+    authorName: 'Cole',
+    createdOn: 2020-11-09T15:05:43.444Z,
+    __v: 0
+  },
+  {
+    _id: 5fa95dd86bf60b1d9ff70999,
+    blogTitle: 'logged in with a different account',
+    blogText: 'it shows my name!',
+    authorEmail: 'colevohs@googlemail.com',
+    authorName: 'Cole',
+    createdOn: 2020-11-09T15:18:48.249Z,
+    __v: 0
+  },
+  {
+    _id: 5fa95e7a6bf60b1d9ff7099b,
+    blogTitle: 'This is a blog',
+    blogText: 'Now you can only edit your own!',
+    authorEmail: 'colevohs@protonmail.com',
+    authorName: 'Cole Vohs',
+    createdOn: 2020-11-09T15:21:30.219Z,
+    __v: 0
+  }
+]
+GET /api/blogs 304 - - 3.653 ms
+GET /favicon.ico 304 - - 0.509 ms
+GET /favicon.ico 304 - - 0.639 ms
+Getting blog list
+[
+  {
+    _id: 5fa95ac700de211a231aa815,
+    blogTitle: 'Attach my email',
+    blogText: 'it works!',
+    authorEmail: 'colevohs@gmail.com',
+    authorName: 'Cole',
+    createdOn: 2020-11-09T15:05:43.444Z,
+    __v: 0
+  },
+  {
+    _id: 5fa95dd86bf60b1d9ff70999,
+    blogTitle: 'logged in with a different account',
+    blogText: 'it shows my name!',
+    authorEmail: 'colevohs@googlemail.com',
+    authorName: 'Cole',
+    createdOn: 2020-11-09T15:18:48.249Z,
+    __v: 0
+  },
+  {
+    _id: 5fa95e7a6bf60b1d9ff7099b,
+    blogTitle: 'This is a blog',
+    blogText: 'Now you can only edit your own!',
+    authorEmail: 'colevohs@protonmail.com',
+    authorName: 'Cole Vohs',
+    createdOn: 2020-11-09T15:21:30.219Z,
+    __v: 0
+  }
+]
+GET /api/blogs 304 - - 4.831 ms
+GET /favicon.ico 304 - - 0.663 ms
+{
+  _id: 5fa95ac700de211a231aa815,
+  blogTitle: 'Attach my email',
+  blogText: 'it works!',
+  authorEmail: 'colevohs@gmail.com',
+  authorName: 'Cole',
+  createdOn: 2020-11-09T15:05:43.444Z,
+  __v: 0
+}
+GET /api/blogs/5fa95ac700de211a231aa815 200 189 - 7.711 ms
+GET /favicon.ico 304 - - 3.769 ms
+{
+  _id: 5fa95ac700de211a231aa815,
+  blogTitle: 'Attach my email',
+  blogText: 'it works!',
+  authorEmail: 'colevohs@gmail.com',
+  authorName: 'Cole',
+  createdOn: 2020-11-09T15:05:43.444Z,
+  __v: 0
+}
+GET /api/blogs/5fa95ac700de211a231aa815 304 - - 2.274 ms
+Updating a blog entry with id of 5fa95ac700de211a231aa815
+PUT /api/blogs/5fa95ac700de211a231aa815 201 189 - 20.197 ms
+GET /favicon.ico 304 - - 0.600 ms
+Getting blog list
+[
+  {
+    _id: 5fa95ac700de211a231aa815,
+    blogTitle: 'Attached my email',
+    blogText: 'it works!',
+    authorEmail: 'colevohs@gmail.com',
+    authorName: 'Cole',
+    createdOn: 2020-11-09T15:05:43.444Z,
+    __v: 0
+  },
+  {
+    _id: 5fa95dd86bf60b1d9ff70999,
+    blogTitle: 'logged in with a different account',
+    blogText: 'it shows my name!',
+    authorEmail: 'colevohs@googlemail.com',
+    authorName: 'Cole',
+    createdOn: 2020-11-09T15:18:48.249Z,
+    __v: 0
+  },
+  {
+    _id: 5fa95e7a6bf60b1d9ff7099b,
+    blogTitle: 'This is a blog',
+    blogText: 'Now you can only edit your own!',
+    authorEmail: 'colevohs@protonmail.com',
+    authorName: 'Cole Vohs',
+    createdOn: 2020-11-09T15:21:30.219Z,
+    __v: 0
+  }
+]
+GET /api/blogs 200 612 - 3.206 ms
+{
+  _id: 5fa95ac700de211a231aa815,
+  blogTitle: 'Attached my email',
+  blogText: 'it works!',
+  authorEmail: 'colevohs@gmail.com',
+  authorName: 'Cole',
+  createdOn: 2020-11-09T15:05:43.444Z,
+  __v: 0
+}
+GET /api/blogs/5fa95ac700de211a231aa815 200 191 - 2.846 ms
+GET /favicon.ico 304 - - 0.623 ms
+{
+  _id: 5fa95ac700de211a231aa815,
+  blogTitle: 'Attached my email',
+  blogText: 'it works!',
+  authorEmail: 'colevohs@gmail.com',
+  authorName: 'Cole',
+  createdOn: 2020-11-09T15:05:43.444Z,
+  __v: 0
+}
+GET /api/blogs/5fa95ac700de211a231aa815 304 - - 2.397 ms
+{
+  _id: 5fa95ac700de211a231aa815,
+  blogTitle: 'Attached my email',
+  blogText: 'it works!',
+  authorEmail: 'colevohs@gmail.com',
+  authorName: 'Cole',
+  createdOn: 2020-11-09T15:05:43.444Z,
+  __v: 0
+}
+GET /api/blogs/5fa95ac700de211a231aa815 304 - - 3.642 ms
+Deleting blog entry with id of 5fa95ac700de211a231aa815
+{}
+DELETE /api/blogs/5fa95ac700de211a231aa815 204 - - 3.495 ms
+Getting blog list
+GET /favicon.ico 304 - - 1.660 ms
+[
+  {
+    _id: 5fa95dd86bf60b1d9ff70999,
+    blogTitle: 'logged in with a different account',
+    blogText: 'it shows my name!',
+    authorEmail: 'colevohs@googlemail.com',
+    authorName: 'Cole',
+    createdOn: 2020-11-09T15:18:48.249Z,
+    __v: 0
+  },
+  {
+    _id: 5fa95e7a6bf60b1d9ff7099b,
+    blogTitle: 'This is a blog',
+    blogText: 'Now you can only edit your own!',
+    authorEmail: 'colevohs@protonmail.com',
+    authorName: 'Cole Vohs',
+    createdOn: 2020-11-09T15:21:30.219Z,
+    __v: 0
+  }
+]
+GET /api/blogs 200 428 - 3.632 ms
+GET /favicon.ico 304 - - 0.695 ms

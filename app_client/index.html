@@ -23,17 +23,17 @@
         <script type="text/ng-template" id="pages/bloglist.html">
             <h2>{{vm.pageHeader.title}}</h2>
             <div ng-repeat="blog in vm.blogs">
-                <div class="card border-primary" style="width: 50%">
+                <div class="card border-primary" style="width: 40%">
                     <div class="card-header">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">{{blog.blogTitle}}</h5>
-                        <p>{{ blog.createdOn | date}}</p>
+                        <p>By {{ blog.authorName }} on {{ blog.createdOn | date}}</p>
                         <p>{{ blog.blogText  }}
                     </div>
                     <div class="card-footer">
                         <div class = "col-sm">
-                            <ul ng-show="vm.isLoggedIn()" class="nav justify-content-end nav-pills card-header-pills">
+                            <ul ng-show="(vm.currentUser().email == blog.authorEmail)" class="nav justify-content-end nav-pills card-header-pills">
                                 <li class="nav-item">
                                     <a class="nav-link" href="/#!/blog-edit/{{blog._id}}"> <i class="fas fa-edit"></i></a>
                                 </li>
