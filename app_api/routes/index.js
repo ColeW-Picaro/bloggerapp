@@ -14,6 +14,7 @@ router.get('/blogs/:blogid', blogController.blogRead);
 router.post('/blogs/', auth, blogController.blogCreate);
 router.put('/blogs/:blogid', auth, blogController.blogUpdate);
 router.delete('/blogs/:blogid', auth, blogController.blogDelete);
+router.put('/blogs/:blogid/commentadd', blogController.commentAdd);
 router.post('/register', authController.register);
 router.post('/login', authController.login);
 module.exports = router;

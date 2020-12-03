@@ -27,7 +27,7 @@
                     <div class="card-header">
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">{{blog.blogTitle}}</h5>
+                        <a href="/#!/blog/{{blog._id}}"><h5 class="card-title">{{blog.blogTitle}}</h5></a>
                         <p>By {{ blog.authorName }} on {{ blog.createdOn | date}}</p>
                         <p>{{ blog.blogText  }}
                     </div>
@@ -97,9 +97,49 @@
             </div>
         </script>
 
+        <!-- Single Blog View Template -->
+        <script type="text/ng-template" id="pages/blog.html">
+            <h2>Blog</h2>
+            <div class="card border-primary" style="width: 50%">
+                <div class="card-header">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{vm.blog.blogTitle}}</h5>
+                    <p>By {{ vm.blog.authorName }} on {{ vm.blog.createdOn | date}}</p>
+                    <p>{{ vm.blog.blogText  }}
+                </div>
+                <div class="card-footer">
+                    <div class = "col-sm">
+                    </div>
+                </div>
+            </div>
+            <h3>Comments</h3>
+            <div ng-repeat="comment in vm.blog.comments track by $index">
+                <div class="card border-primary" style="width: 50%">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+                        <p>{{ comment }}</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class = "col-sm"></div>
+                    </div>
+                </div>
+            </div>
+            <h3>Leave a Comment</h3>
+            <div class="card border-primary" style="width: 50%">
+                <form name="userForm" ng-submit="vm.submit()" ng-controller="BlogController" style="padding: 20px">
+                    <div class="form-group">
+                        <textarea class="form-control" id="text" rows="3" name="commentText"></textarea>
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Comment">
+                </form>
+            </div>
+        </script>
+
         <div ng-view></div>
         <script src="/js/bloggerApp.js"></script>
         <script src="/js/auth/authentication.js"></script>
         <script src="/js/nav/navigation.js"></script>
     </body>
+
 </html>

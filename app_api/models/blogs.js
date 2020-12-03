@@ -7,7 +7,11 @@ var blogSchema = new mongoose.Schema({
         "default": Date.now
     },
     authorEmail: String,
-    authorName: String
+    authorName: String,
+    comments: {
+        type: Object,
+        "default": []
+    }
 });
 
 mongoose.model('Blog', blogSchema);

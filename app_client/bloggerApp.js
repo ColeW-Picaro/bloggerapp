@@ -18,6 +18,11 @@ app.config(function($routeProvider) {
             controller: 'AddController',
             controllerAs: 'vm'
         })
+        .when('/blog/:id', {
+            templateUrl: 'pages/blog.html',
+            controller: 'BlogController',
+            controllerAs: 'vm'
+        })
         .when('/blog-edit/:id', {
             templateUrl: 'pages/blogedit.html',
             controller: 'EditController',
@@ -75,6 +80,10 @@ function deleteBlog($http, id, auth) {
                                               });
 }
 
+function addCommentToBlog($http, id, data) {
+    return $http.put('/api/blogs/' + id + '/commentadd', data);
+}
+
 app.controller('HomeController', function HomeController() {
     var vm = this;
     vm.pageHeader = {
@@ -83,7 +92,7 @@ app.controller('HomeController', function HomeController() {
     vm.message = "Welcome to my blog page!";
 });
 
-app.controller('ListController', function ListController($http, authentication) {
+app.controller('ListController', function ListController($http, authentication, $interval, $scope) {
     var vm = this;
     vm.pageHeader = {
         title: "Blog List"
@@ -101,12 +110,72 @@ app.controller('ListController', function ListController($http, authentication) 
     };
     vm.isLoggedIn = function() {
         return authentication.isLoggedIn();
-    }
+    };
     vm.isCreatedBy = function(email) {
         console.log(email);
         return authentication.currentUser().email == email;
-    }
+    };
+    // Refresh on interval
+    $scope.callAtInterval = function() {
+        console.log("refreshing data");
+        getAllBlogs($http)
+            .then(
+                function(data) {
+                    vm.blogs = data.data;
+                },
+                function (e) {
+                    console.log(e);
+                    $state.go('blog-list');
+                });
+    };
+    $interval(function(){$scope.callAtInterval();}, 3000, 0, true);
 });
+
+app.controller('BlogController', function BlogController($http, $routeParams, $interval, $scope) {
+    var vm = this;
+    var blog = {};
+    vm.id = $routeParams.id;
+
+    getBlogById($http, vm.id)
+      .then(
+          function(data) {
+              vm.blog = data.data;
+          },
+          function (e) {
+              console.log(e);
+              $state.go('blog-list');
+          });
+    vm.submit = function() {
+        var data = {
+            comment: userForm.commentText.value
+        };
+        addCommentToBlog($http, vm.id, data)
+            .then(
+                function(data) {
+                    console.log('added');
+
+                },
+                function(error) {
+                    console.log(error);
+                }
+            );
+    };
+
+    // Refresh on interval
+    $scope.callAtInterval = function() {
+        console.log("refreshing data");
+        getBlogById($http, vm.id)
+            .then(
+                function(data) {
+                    vm.blog = data.data;
+                },
+                function (e) {
+                    console.log(e);
+                    $state.go('blog-list');
+                });
+    };
+    $interval(function(){$scope.callAtInterval();}, 3000, 0, true);
+})
 
 app.controller('AddController', function AddController($http, $routeParams, $state, authentication) {
     var vm = this;

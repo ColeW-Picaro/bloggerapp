@@ -118,3 +118,49 @@ module.exports.blogDelete = function (req, res) {
                }
            );
 };
+
+// PUT /api/blogs/id/addcomment
+module.exports.commentAdd = function (req, res) {
+    console.log("adding a comment");
+    if (req.params && req.params.blogid) {
+        // Make the initial request to find the comments
+        Blogger.findById(req.params.blogid)
+        .exec(function(err, blog) {
+            if (!blog) {
+                sendJSONresponse(res, 404, {
+                    "message": "blogid not found"
+                });
+                return;
+            } else if (err) {
+                console.log(err);
+                sendJSONresponse(res, 404, err);
+                return;
+            }
+            // Append the comment in the request to the comments in the blog
+            var comments = blog.comments;
+            comments.push(req.body.comment);
+            // Update the comments
+            Blogger.findOneAndUpdate(
+                { _id: req.params.blogid },
+                { $set: { "comments": comments } },
+                function(err, blog) {
+                    if (err) {
+  	                    sendJSONresponse(res, 400, err);
+                    } else  {
+	                    sendJSONresponse(res, 201, blog);
+                    }
+                }
+            );
+        });
+
+    } else {
+        console.log('no blogid provided');
+        sendJSONresponse(res, 404, {
+            "message": "No blogid in request"
+        });
+    }
+
+}
+
+
+// PUT /api/blogs/id/removecomment
